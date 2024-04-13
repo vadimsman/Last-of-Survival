@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Unity Store Assets/Tavern Interior By I.We.D/Scenes/Demo.unity
+    path: Assets/Main Room Assets/Tavern Interior By I.We.D/Scenes/Demo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/City.unity
