@@ -18,15 +18,24 @@ public class PlayerController : MonoBehaviour
 
     public float JumpForce;
 
+    public GameObject GamePlayUI;
+
+    public GameObject PauseMenuUI;
+
+    public bool IsSettingsOpen;
+
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
     {
         Movement();
         JumpMove();
+        PauseMenuUpdate();
     }
 
     void FixedUpdate()
@@ -82,6 +91,17 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             Speed = 8;
+        }
+    }
+
+    private void PauseMenuUpdate()
+    {
+        if (Input.GetKey(KeyCode.Escape) && !IsSettingsOpen)
+        {
+            GamePlayUI.SetActive(false);
+            PauseMenuUI.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

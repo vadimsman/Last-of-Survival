@@ -41,5 +41,21 @@ public class ButtonController : MonoBehaviour
     {
         PauseUI.SetActive(false);
         GamePlayUI.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void SettingsInGame()
+    {
+        PauseUI.SetActive(false);
+        SettingsUI.SetActive(true);
+        GetComponent<PlayerController>().IsSettingsOpen = true;
+    }
+
+    public void ExitSettingsInGame()
+    {
+        SettingsUI.SetActive(false);
+        PauseUI.SetActive(true);
+        GetComponent<PlayerController>().IsSettingsOpen = false;
     }
 }
