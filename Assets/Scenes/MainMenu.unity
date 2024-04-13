@@ -308,6 +308,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonUI: {fileID: 0}
   TiterUI: {fileID: 0}
+  GamePlayUI: {fileID: 0}
+  PauseUI: {fileID: 0}
+  SettingsUI: {fileID: 0}
 --- !u!114 &79297193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,6 +456,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonUI: {fileID: 2059759163}
   TiterUI: {fileID: 827336030}
+  GamePlayUI: {fileID: 0}
+  PauseUI: {fileID: 0}
+  SettingsUI: {fileID: 0}
 --- !u!114 &412760152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,10 +873,10 @@ RectTransform:
   m_Father: {fileID: 2059759164}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1079, y: -540}
-  m_SizeDelta: {x: 161, y: 31}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -249, y: -158}
+  m_SizeDelta: {x: 263.28125, y: 61.521255}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &645620499
 MonoBehaviour:
@@ -886,6 +892,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonUI: {fileID: 0}
   TiterUI: {fileID: 0}
+  GamePlayUI: {fileID: 0}
+  PauseUI: {fileID: 0}
+  SettingsUI: {fileID: 0}
 --- !u!114 &645620500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1386,6 +1395,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonUI: {fileID: 2059759163}
   TiterUI: {fileID: 827336030}
+  GamePlayUI: {fileID: 0}
+  PauseUI: {fileID: 0}
+  SettingsUI: {fileID: 0}
 --- !u!114 &1390312717
 MonoBehaviour:
   m_ObjectHideFlags: 0

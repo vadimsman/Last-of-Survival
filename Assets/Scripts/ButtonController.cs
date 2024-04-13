@@ -7,10 +7,9 @@ public class ButtonController : MonoBehaviour
 {
     public GameObject ButtonUI;
     public GameObject TiterUI;
-    private void Start()
-    {
-        
-    }
+    public GameObject GamePlayUI;
+    public GameObject PauseUI;
+    public GameObject SettingsUI;
     public void PlayButton(string SceneName)
     {
         SceneManager.LoadScene(SceneName);
@@ -31,5 +30,16 @@ public class ButtonController : MonoBehaviour
     {
         ButtonUI.SetActive(true);
         TiterUI.SetActive(false);
+    }
+
+    public void GoMainMenu(string SceneName)
+    {
+        SceneManager.LoadScene(SceneName);
+    }
+
+    public void Continue()
+    {
+        PauseUI.SetActive(false);
+        GamePlayUI.SetActive(true);
     }
 }
