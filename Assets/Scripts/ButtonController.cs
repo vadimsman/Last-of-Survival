@@ -9,7 +9,7 @@ public class ButtonController : MonoBehaviour
     public GameObject TiterUI;
     private void Start()
     {
-        TiterUI.SetActive(false);
+        
     }
     public void PlayButton(string SceneName)
     {
