@@ -140,5 +140,5 @@ MonoBehaviour:
   Speed: 1
   DayXRotate: -230
   NightXRotate: -10
-  DayOrNight: Day
+  DayOrNight: 1
   LightGroup: {fileID: 0}

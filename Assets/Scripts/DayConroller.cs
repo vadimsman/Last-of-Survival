@@ -18,10 +18,14 @@ public class DayConroller : MonoBehaviour
 
     private float _newAngleX;
 
+    public void Start()
+    {
+        
+    }
+
     public void Update()
     {
-        _newAngleX = DirectionLight.localEulerAngles.x - Time.deltaTime * Speed * 1;
-        DirectionLight.localEulerAngles = new Vector3(_newAngleX, 0, 0);
+        DirectionLight.transform.Rotate(Vector3.right * Speed * Time.deltaTime);
         DayUpdate();
     }
 
