@@ -10,8 +10,6 @@ public class DayConroller : MonoBehaviour
 
     public float NightXRotate;
 
-    public bool DayOrNight = true; //День это true, ночь это false
-
     public GameObject LightGroup;
 
     private float _newAngleX;
@@ -28,6 +26,7 @@ public class DayConroller : MonoBehaviour
         transform.Rotate(Vector3.right * Speed * Time.deltaTime);
         _newAngleX = transform.eulerAngles.x;
         _isDay = _newAngleX > DayXRotate && _newAngleX < NightXRotate;
+        LightOnOrOf();
     }
 
     private void LightOnOrOf()
