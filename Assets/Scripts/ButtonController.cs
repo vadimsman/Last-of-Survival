@@ -10,6 +10,7 @@ public class ButtonController : MonoBehaviour
     public GameObject GamePlayUI;
     public GameObject PauseUI;
     public GameObject SettingsUI;
+    public GameObject SettingsFullUI;
     public void PlayButton(string SceneName)
     {
         SceneManager.LoadScene(SceneName);
@@ -57,5 +58,29 @@ public class ButtonController : MonoBehaviour
         SettingsUI.SetActive(false);
         PauseUI.SetActive(true);
         GetComponent<PlayerController>().IsSettingsOpen = false;
+    }
+
+    public void GoSettings()
+    {
+        SettingsFullUI.SetActive(true);
+        ButtonUI.SetActive(false);
+    }
+
+    public void ExitSettings()
+    {
+        SettingsFullUI.SetActive(false);
+        ButtonUI.SetActive(true);
+    }
+
+    public void SetSensitivity(float LocalSensitivity)
+    {
+        PlayerPrefs.SetFloat("Sensitivity", LocalSensitivity);
+    }
+
+    public void SaveSettings()
+    {
+        GetComponent<CameraRotation>().RotationSpeed = PlayerPrefs.GetFloat("Sensitivity");
+        SettingsFullUI.SetActive(false);
+        ButtonUI.SetActive(true);
     }
 }
