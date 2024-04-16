@@ -92,6 +92,8 @@ public class PlayerController : MonoBehaviour
         {
             Speed = 8;
         }
+
+        //_moveVector = Vector3.ClampMagnitude(_moveVector, Speed);
     }
 
     private void PauseMenuUpdate()

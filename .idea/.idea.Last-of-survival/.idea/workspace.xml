@@ -10,6 +10,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="2f3KV5WLFOd5SkI5RDozSvgRWwN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,7 +56,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713024345938</updated>
-      <workItem from="1713024351916" duration="496000" />
+      <workItem from="1713024351916" duration="1166000" />
+      <workItem from="1713273923347" duration="334000" />
     </task>
     <servers />
   </component>
