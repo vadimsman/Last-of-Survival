@@ -10,9 +10,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GatesHealth.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyMobGates.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DeleteBlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAIGatesEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GatesHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" />
       </list>
     </option>
@@ -57,7 +64,10 @@
       <option name="presentableId" value="Default" />
       <updated>1713024345938</updated>
       <workItem from="1713024351916" duration="1166000" />
-      <workItem from="1713273923347" duration="334000" />
+      <workItem from="1713273923347" duration="601000" />
+      <workItem from="1713278525244" duration="1133000" />
+      <workItem from="1713296415283" duration="1437000" />
+      <workItem from="1713369643707" duration="5425000" />
     </task>
     <servers />
   </component>
