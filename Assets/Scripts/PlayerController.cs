@@ -104,6 +104,7 @@ public class PlayerController : MonoBehaviour
             PauseMenuUI.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            Time.timeScale = 0;
         }
     }
 }

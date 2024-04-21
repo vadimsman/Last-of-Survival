@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class ButtonController : MonoBehaviour
     public GameObject PauseUI;
     public GameObject SettingsUI;
     public GameObject SettingsFullUI;
+    public Sprite SoundsOnSprite;
+    public Sprite SoundOffSprite;
+    public Button SoundButton;
     public void PlayButton(string SceneName)
     {
         SceneManager.LoadScene(SceneName);
@@ -44,6 +48,7 @@ public class ButtonController : MonoBehaviour
         GamePlayUI.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        Time.timeScale = 1;
     }
 
     public void SettingsInGame()
@@ -82,5 +87,19 @@ public class ButtonController : MonoBehaviour
         GetComponent<CameraRotation>().RotationSpeed = PlayerPrefs.GetFloat("Sensitivity");
         SettingsFullUI.SetActive(false);
         ButtonUI.SetActive(true);
+    }
+
+    public void SoundToggleButton()
+    {
+        if (AudioListener.volume == 0)
+        {
+            AudioListener.volume = 1;
+            SoundButton.image.sprite = SoundsOnSprite;
+        }
+        else
+        {
+            AudioListener.volume = 0;
+            SoundButton.image.sprite = SoundOffSprite;
+        }
     }
 }
