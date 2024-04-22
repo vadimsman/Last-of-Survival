@@ -12,6 +12,8 @@ public class EnemyGatesEvent : MonoBehaviour
 
     private EnemyAI _mobPatrol;
 
+    private EnemyGatesEvent _gatesEvent;
+
     private void Start()
     {
         LinkGetComponents();
@@ -57,5 +59,6 @@ public class EnemyGatesEvent : MonoBehaviour
     {
         _mob = GetComponent<NavMeshAgent>();
         _mobPatrol = GetComponent<EnemyAI>();
+        _gatesEvent = GetComponent<EnemyGatesEvent>();
     }
 }

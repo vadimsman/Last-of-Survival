@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptOrderController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GatesHealth.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -21,8 +22,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAIGatesEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GatesHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyGatesEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyGatesEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptOrderController.cs" />
       </list>
     </option>
   </component>
@@ -70,7 +72,7 @@
       <workItem from="1713278525244" duration="1133000" />
       <workItem from="1713296415283" duration="1437000" />
       <workItem from="1713369643707" duration="5425000" />
-      <workItem from="1713792242597" duration="1657000" />
+      <workItem from="1713792242597" duration="2746000" />
     </task>
     <servers />
   </component>

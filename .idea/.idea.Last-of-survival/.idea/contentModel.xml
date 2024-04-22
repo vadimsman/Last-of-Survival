@@ -31,6 +31,7 @@
           <e p="EnemyHealth.cs" t="Include" />
           <e p="GatesHealth.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="ScriptOrderController.cs" t="Include" />
           <e p="Settings.cs" t="Include" />
           <e p="WeaponShoot.cs" t="Include" />
         </e>
