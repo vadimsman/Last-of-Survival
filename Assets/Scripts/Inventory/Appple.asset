@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0e3a2535f6c264da7f85d2218ff53d, type: 3}
   m_Name: Appple
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 1
   itemName: Apple
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 4886338592919571114, guid: b77e5922a75e01e409e35b05a161b046,
+    type: 3}
+  icon: {fileID: 21300000, guid: b5a7b79cc80105d4dbc4fb130b7ddf01, type: 3}
   maxAmount: 10
   itemDescription: 
   healAmount: 10
