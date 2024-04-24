@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f0e3a2535f6c264da7f85d2218ff53d, type: 3}
-  m_Name: Appple
+  m_Name: Weapon
   m_EditorClassIdentifier: 
   itemType: 0
-  itemName: Apple
+  itemName: 
   itemPrefab: {fileID: 0}
-  maxAmount: 10
+  maxAmount: 0
   itemDescription: 
-  healAmount: 10
+  healAmount: 0

@@ -28,8 +28,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptOrderController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Food.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PauseManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" />
       </list>
     </option>
   </component>
@@ -80,6 +84,8 @@
       <workItem from="1713792242597" duration="3980000" />
       <workItem from="1713821796792" duration="3993000" />
       <workItem from="1713914283395" duration="3297000" />
+      <workItem from="1713917898897" duration="973000" />
+      <workItem from="1713956624797" duration="11060000" />
     </task>
     <servers />
   </component>
