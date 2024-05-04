@@ -894,7 +894,7 @@ GameObject:
   - component: {fileID: 3161698791669643135}
   - component: {fileID: 3161698791669643134}
   - component: {fileID: 3161698791669643121}
-  - component: {fileID: 2776177501213891148}
+  - component: {fileID: 6919846562820445076}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -971,7 +971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CameraAxisTransform: {fileID: 3161698790875298660}
   RotationSpeed: 200
---- !u!114 &2776177501213891148
+--- !u!114 &6919846562820445076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -980,9 +980,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 3161698791669643133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2cbd84d11f180c43b1e08bf3370ad09, type: 3}
+  m_Script: {fileID: 11500000, guid: 32a9d370fcacb3e47ae20eed88c46af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damage: 10
+  CameraLink: {fileID: 3161698790875298662}
+  KeyDown: 1
+  KeyDownSpeed: 0.01
+  Ammo: 30
+  MaxAmmo: 30
+  AmmoInInventory: 30
+  ReloadTime: 3
 --- !u!1 &3161698792720627484
 GameObject:
   m_ObjectHideFlags: 0
