@@ -1065,7 +1065,7 @@ GameObject:
   - component: {fileID: 3161698791669643135}
   - component: {fileID: 3161698791669643134}
   - component: {fileID: 3161698791669643121}
-  - component: {fileID: 6919846562820445076}
+  - component: {fileID: 250734133686200439}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CameraAxisTransform: {fileID: 3161698790875298660}
   RotationSpeed: 200
---- !u!114 &6919846562820445076
+--- !u!114 &250734133686200439
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1154,14 +1154,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a9d370fcacb3e47ae20eed88c46af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 10
-  CameraLink: {fileID: 3161698790875298662}
-  KeyDown: 1
-  KeyDownSpeed: 0.01
-  Ammo: 30
-  MaxAmmo: 30
-  AmmoInInventory: 30
-  ReloadTime: 3
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  muzzlePosition: {fileID: 0}
+  firePoint: {fileID: 0}
+  force: 10
 --- !u!1 &3161698792720627484
 GameObject:
   m_ObjectHideFlags: 0
