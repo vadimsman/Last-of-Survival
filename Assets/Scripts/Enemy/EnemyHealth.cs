@@ -5,10 +5,11 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float value;
+    public float Damage;
     
-    public void Damage(float DamageValue)
+    public void DamageUpdate()
     {
-        value -= DamageValue;
+        value -= Damage;
         Death();
     }
 

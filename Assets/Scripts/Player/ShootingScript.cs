@@ -5,7 +5,7 @@ public class ShootingScript : MonoBehaviour
     public LayerMask targetLayer; // Маска слоя для определения целей
     public Transform muzzlePosition; // Позиция ствола оружия
     public Transform firePoint; // Точка, откуда производится выстрел
-    public float force = 10f; // Сила выстрела
+    public float damage;
 
     void Update()
     {
@@ -15,8 +15,10 @@ public class ShootingScript : MonoBehaviour
             // Создание луча от точки стрельбы в направлении взгляда камеры
             if (Physics.Raycast(firePoint.position, firePoint.forward, out hit, Mathf.Infinity, targetLayer))
             {
+                var EnemyHealth = hit.collider.GetComponent<EnemyHealth>();
                 // Если луч попал в цель
                 Debug.Log("Попал во что-то!");
+                EnemyHealth.DamageUpdate();
             }
             else
             {
