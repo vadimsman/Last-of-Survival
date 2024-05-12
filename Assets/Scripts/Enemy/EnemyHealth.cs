@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public float value;
     public float Damage;
+    public GameObject EnemyParent;
     
     public void DamageUpdate()
     {
@@ -17,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (value <= 0)
         {
-            Destroy(gameObject);
+            Destroy(EnemyParent);
         }
     }
 }
