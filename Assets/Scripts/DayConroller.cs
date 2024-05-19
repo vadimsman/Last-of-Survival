@@ -16,6 +16,8 @@ public class DayConroller : MonoBehaviour
 
     private bool _isDay;
 
+    public bool IsDay => _isDay;
+
     public void Start()
     {
         _newAngleX = transform.eulerAngles.x;

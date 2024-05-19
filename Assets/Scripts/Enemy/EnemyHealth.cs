@@ -14,6 +14,11 @@ public class EnemyHealth : MonoBehaviour
         Death();
     }
 
+    public void DayDamage(float Damage)
+    {
+        value -= Damage;
+    }
+
     public void Death()
     {
         if (value <= 0)
