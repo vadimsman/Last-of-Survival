@@ -29,21 +29,10 @@ public class EnemyGatesEvent : MonoBehaviour
 
     private void GateDetectionAndDamage()
     {
-        var GatesDirection = _gatesHealth.transform.position - transform.position;
-        RaycastHit hit;
-
-        if (Physics.Raycast(transform.position, GatesDirection, out hit))
+        _mob.destination = _gatesHealth.transform.position;
+        if (_mob.remainingDistance <= _mob.stoppingDistance)
         {
-            if (hit.collider.gameObject == _gatesHealth.gameObject)
-            {
-                _mob.destination = _gatesHealth.transform.position;
-                
-                if (_mob.remainingDistance < _mob.stoppingDistance)
-                {
-                    _gatesHealth.DealDamage(_amount * Time.deltaTime);
-                }
-                
-            }
+            _gatesHealth.DealDamage(_amount * Time.deltaTime);
         }
     }
 

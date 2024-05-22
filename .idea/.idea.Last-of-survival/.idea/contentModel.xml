@@ -40,8 +40,6 @@
             <e p="ShootingScript.cs" t="Include" />
           </e>
           <e p="ScriptOrderController.cs" t="Include" />
-          <e p="Settings.cs" t="Include" />
-          <e p="SettingsTest.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

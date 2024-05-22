@@ -2,7 +2,6 @@
 
 public class ShootingScript : MonoBehaviour
 {
-    public LayerMask targetLayer; // Маска слоя для определения целей
     public Transform muzzlePosition; // Позиция ствола оружия
     public Transform firePoint; // Точка, откуда производится выстрел
     public float damage;
@@ -12,18 +11,19 @@ public class ShootingScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) // Проверка нажатия кнопки огня
         {
             RaycastHit hit;
-            // Создание луча от точки стрельбы в направлении взгляда камеры
-            if (Physics.Raycast(firePoint.position, firePoint.forward, out hit, Mathf.Infinity, targetLayer))
+
+            if (Physics.Raycast(firePoint.position, firePoint.forward, out hit, Mathf.Infinity))
             {
-                var EnemyHealth = hit.collider.GetComponent<EnemyHealth>();
-                // Если луч попал в цель
-                Debug.Log("Попал во что-то!");
-                EnemyHealth.DamageUpdate();
-            }
-            else
-            {
-                // Если луч ни во что не попал
-                Debug.Log("Missed!");
+                if (hit.collider.GetComponent<EnemyHealth>() != null)
+                {
+                    Debug.Log("POPAL");
+                    var enemyHealth = hit.collider.GetComponent<EnemyHealth>();
+                    enemyHealth.DamageUpdate();
+                }
+                else
+                {
+                    Debug.Log("LOXSuk");
+                }
             }
         }
     }
