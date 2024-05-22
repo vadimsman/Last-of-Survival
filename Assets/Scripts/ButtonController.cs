@@ -39,6 +39,7 @@ public class ButtonController : MonoBehaviour
 
     public void GoMainMenu(string SceneName)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneName);
     }
 
