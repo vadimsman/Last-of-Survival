@@ -14,6 +14,12 @@ public class EnemyAI : MonoBehaviour
 
     public PlayerController Player;
     private bool _playerVisibility;
+    private PlayerHealth _healthPlayer;
+
+    public float AngleView;
+    public float DistanceToPlayer;
+
+    [SerializeField] private float _amountDamage;
 
     private void Start()
     {
@@ -29,12 +35,16 @@ public class EnemyAI : MonoBehaviour
         CharacterVisiblyCheck();
         
         PatrolToPlayer();
+        
+        EnemyAttack();
     }
 
     private void LinksGetComponents()
     {
         _mob = GetComponent<NavMeshAgent>();
         _enemyGatesEvent = GetComponent<EnemyGatesEvent>();
+        _healthPlayer = FindObjectOfType<PlayerHealth>();
+
     }
     private void RandomPatrolPoints()
     {
@@ -65,12 +75,27 @@ public class EnemyAI : MonoBehaviour
         RaycastHit hit;
 
         Ray ray = new Ray(transform.position + Vector3.up, direction);
-        
-        if (Physics.Raycast(ray, out hit))
+
+        if (Vector3.Angle(transform.forward, direction) < AngleView || Vector3.Distance(transform.position, Player.transform.position) < DistanceToPlayer) 
         {
-            if (hit.collider.gameObject == Player.gameObject)
+            if (Physics.Raycast(ray, out hit))
             {
-                _playerVisibility = true;
+                if (hit.collider.gameObject == Player.gameObject)
+                {
+                    _playerVisibility = true;
+                }
+            }
+        }
+        
+    }
+
+    private void EnemyAttack()
+    {
+        if (_playerVisibility)
+        {
+            if (_mob.remainingDistance <= _mob.stoppingDistance)
+            {
+                _healthPlayer.DealDamage(_amountDamage * Time.deltaTime);
             }
         }
     }
