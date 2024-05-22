@@ -30,8 +30,8 @@
             <e p="EnemyGatesEvent.cs" t="Include" />
             <e p="EnemyHealth.cs" t="Include" />
             <e p="EnemySpawner.cs" t="Include" />
-            <e p="GatesHealth.cs" t="Include" />
           </e>
+          <e p="GatesHealth.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="BuildingEnter.cs" t="Include" />
             <e p="CameraRotation.cs" t="Include" />

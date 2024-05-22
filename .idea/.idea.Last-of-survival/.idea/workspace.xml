@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptOrderController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GatesHealth.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -86,7 +87,7 @@
       <workItem from="1713914283395" duration="3297000" />
       <workItem from="1713917898897" duration="973000" />
       <workItem from="1713956624797" duration="11060000" />
-      <workItem from="1716393400945" duration="2918000" />
+      <workItem from="1716393400945" duration="3507000" />
     </task>
     <servers />
   </component>
