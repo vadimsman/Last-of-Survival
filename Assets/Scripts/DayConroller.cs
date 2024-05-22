@@ -14,9 +14,12 @@ public class DayConroller : MonoBehaviour
 
     private float _newAngleX;
 
-    private bool _isDay;
+    public bool IsDay;
 
-    public bool IsDay => _isDay;
+    public int EnemyCount;
+    public int Wave = 0;
+    public GameObject WaveUI;
+    public float DayDamage;
 
     public void Start()
     {
@@ -27,17 +30,32 @@ public class DayConroller : MonoBehaviour
     {
         transform.Rotate(Vector3.right * Speed * Time.deltaTime);
         _newAngleX = transform.eulerAngles.x;
-        _isDay = _newAngleX > DayXRotate && _newAngleX < NightXRotate;
+        IsDay = _newAngleX > DayXRotate && _newAngleX < NightXRotate;
         LightOnOrOf();
+
+        if (IsDay == false)
+        {
+            Wave += 1;
+            while (EnemyCount > 0)
+            {
+                GetComponent<EnemySpawner>().SpawnEnemy();
+                EnemyCount -= 1;
+            }
+            WaveUI.SetActive(true);
+        }
+        if (IsDay == true)
+        {
+            GetComponent<EnemyHealth>().DayDamage(DayDamage);
+        }
     }
 
     private void LightOnOrOf()
     {
-        if (_isDay)
+        if (IsDay)
         {
             LightGroup.SetActive(false);
         }
-        if (!_isDay)
+        if (!IsDay)
         {
             LightGroup.SetActive(enabled);
         }

@@ -102,6 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8111297553550303516}
   - component: {fileID: 8111297553550303517}
+  - component: {fileID: 9178103479909100755}
   m_Layer: 0
   m_Name: DayController
   m_TagString: Untagged
@@ -139,5 +140,24 @@ MonoBehaviour:
   Speed: 10
   DayXRotate: 0
   NightXRotate: 250
-  DayOrNight: 1
   LightGroup: {fileID: 0}
+  IsDay: 0
+  EnemyCount: 2
+  Wave: 0
+  WaveUI: {fileID: 0}
+  DayDamage: 0
+--- !u!114 &9178103479909100755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8111297553550303518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70636b8dca40d174c8f83f7a88969ad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemySpawnerObject: {fileID: 0}
+  EnemyPrefab: {fileID: 69219822280087937, guid: 0fb13dc6209f4f642aae5a42a5e3e504,
+    type: 3}
