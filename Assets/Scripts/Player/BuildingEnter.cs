@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class BuildingEnter : MonoBehaviour
 {
     public string NameScene;
-    public GameObject EnterUI;
-    public GameObject GamePlayUI;
+    public UnityEngine.GameObject EnterUI;
+    public UnityEngine.GameObject GamePlayUI;
 
     private bool _isEnterUIOpen;
 

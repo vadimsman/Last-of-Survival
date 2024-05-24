@@ -6,7 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public float value;
     public float Damage;
-    public GameObject EnemyParent;
+    public UnityEngine.GameObject EnemyParent;
     
     public void DamageUpdate()
     {

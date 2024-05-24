@@ -142,7 +142,7 @@ MonoBehaviour:
   NightXRotate: 250
   LightGroup: {fileID: 0}
   IsDay: 0
-  EnemyCount: 2
+  EnemyCount: 1
   Wave: 0
   WaveUI: {fileID: 0}
   DayDamage: 0

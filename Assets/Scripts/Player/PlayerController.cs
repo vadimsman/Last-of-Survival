@@ -18,9 +18,9 @@ public class PlayerController : MonoBehaviour
 
     public float JumpForce;
 
-    public GameObject GamePlayUI;
+    public UnityEngine.GameObject GamePlayUI;
 
-    public GameObject PauseMenuUI;
+    public UnityEngine.GameObject PauseMenuUI;
 
     public bool IsSettingsOpen;
 

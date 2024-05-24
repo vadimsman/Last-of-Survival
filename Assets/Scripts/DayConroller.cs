@@ -10,7 +10,7 @@ public class DayConroller : MonoBehaviour
 
     public float NightXRotate;
 
-    public GameObject LightGroup;
+    public UnityEngine.GameObject LightGroup;
 
     private float _newAngleX;
 
@@ -18,7 +18,7 @@ public class DayConroller : MonoBehaviour
 
     public int EnemyCount;
     public int Wave = 0;
-    public GameObject WaveUI;
+    public UnityEngine.GameObject WaveUI;
     public float DayDamage;
 
     public void Start()

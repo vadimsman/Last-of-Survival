@@ -12,19 +12,25 @@ public class EnemyGatesEvent : MonoBehaviour
 
     private EnemyAI _mobPatrol;
 
-    private EnemyGatesEvent _gatesEvent;
-
     private void Start()
     {
         LinkGetComponents();
+        // Перебираем все объекты в сцене
+        foreach (var obj in FindObjectsOfType<GameObject>())
+        {
+            // Проверяем, содержит ли объект компонент ExampleScriptNeeded
+            if (obj.GetComponent<GatesHealth>() != null)
+            {
+                // Сохраняем ссылку на нужный скрипт
+                _gatesHealth = obj.GetComponent<GatesHealth>();
+                break; // Прерываем цикл, так как нашли нужный объект
+            }
+        }
     }
-
     private void Update()
     {
         GateDetectionAndDamage();
-
         EnablingTheMainScript();
-
     }
 
     private void GateDetectionAndDamage()
@@ -48,6 +54,5 @@ public class EnemyGatesEvent : MonoBehaviour
     {
         _mob = GetComponent<NavMeshAgent>();
         _mobPatrol = GetComponent<EnemyAI>();
-        _gatesEvent = GetComponent<EnemyGatesEvent>();
     }
 }

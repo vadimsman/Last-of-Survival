@@ -26,6 +26,7 @@ public class EnemyAI : MonoBehaviour
         LinksGetComponents();
         RandomPatrolPoints();
         _enemyGatesEvent.enabled = false;
+        Player = FindObjectOfType<PlayerController>();
     }
 
     private void Update()

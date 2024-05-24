@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    public GameObject ButtonUI;
-    public GameObject TiterUI;
-    public GameObject GamePlayUI;
-    public GameObject PauseUI;
-    public GameObject SettingsUI;
-    public GameObject SettingsFullUI;
+    public UnityEngine.GameObject ButtonUI;
+    public UnityEngine.GameObject TiterUI;
+    public UnityEngine.GameObject GamePlayUI;
+    public UnityEngine.GameObject PauseUI;
+    public UnityEngine.GameObject SettingsUI;
+    public UnityEngine.GameObject SettingsFullUI;
     public Sprite SoundsOnSprite;
     public Sprite SoundOffSprite;
     public Button SoundButton;
