@@ -12,7 +12,7 @@ public class EnemyAI : MonoBehaviour
     public List<Transform> Point;
     private EnemyGatesEvent _enemyGatesEvent;
 
-    public PlayerController Player;
+    private PlayerController Player;
     private bool _playerVisibility;
     private PlayerHealth _healthPlayer;
 
@@ -44,6 +44,7 @@ public class EnemyAI : MonoBehaviour
         _mob = GetComponent<NavMeshAgent>();
         _enemyGatesEvent = GetComponent<EnemyGatesEvent>();
         _healthPlayer = FindObjectOfType<PlayerHealth>();
+        Player = FindObjectOfType<PlayerController>();
 
     }
     private void RandomPatrolPoints()
@@ -100,9 +101,9 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    public void SetUpEnemy(PlayerController controller, List<Transform> points)
+    /*public void SetUpEnemy(PlayerController controller, List<Transform> points)
     {
         Player = controller;
         Point = points;
-    }
+    }*/
 }

@@ -21,9 +21,13 @@ public class DayConroller : MonoBehaviour
     public UnityEngine.GameObject WaveUI;
     public float DayDamage;
 
+    private EnemyHealth _enemyHealth;
+
     public void Start()
     {
         _newAngleX = transform.eulerAngles.x;
+        _enemyHealth = FindObjectOfType<EnemyHealth>();
+
     }
 
     public void Update()
@@ -32,20 +36,10 @@ public class DayConroller : MonoBehaviour
         _newAngleX = transform.eulerAngles.x;
         IsDay = _newAngleX > DayXRotate && _newAngleX < NightXRotate;
         LightOnOrOf();
-
-        if (IsDay == false)
-        {
-            Wave += 1;
-            while (EnemyCount > 0)
-            {
-                GetComponent<EnemySpawner>().SpawnEnemy();
-                EnemyCount -= 1;
-            }
-            WaveUI.SetActive(true);
-        }
+        
         if (IsDay == true)
         {
-            GetComponent<EnemyHealth>().DayDamage(DayDamage);
+           _enemyHealth.DayDamage(DayDamage);
         }
     }
 

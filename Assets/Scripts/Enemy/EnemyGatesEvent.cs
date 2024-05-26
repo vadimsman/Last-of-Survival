@@ -15,7 +15,7 @@ public class EnemyGatesEvent : MonoBehaviour
     private void Start()
     {
         LinkGetComponents();
-        // Перебираем все объекты в сцене
+        /*// Перебираем все объекты в сцене
         foreach (var obj in FindObjectsOfType<GameObject>())
         {
             // Проверяем, содержит ли объект компонент ExampleScriptNeeded
@@ -25,7 +25,7 @@ public class EnemyGatesEvent : MonoBehaviour
                 _gatesHealth = obj.GetComponent<GatesHealth>();
                 break; // Прерываем цикл, так как нашли нужный объект
             }
-        }
+        }*/
     }
     private void Update()
     {
@@ -48,11 +48,13 @@ public class EnemyGatesEvent : MonoBehaviour
         {
             _mobPatrol.enabled = true;
         }
+
     }
 
     private void LinkGetComponents()
     {
         _mob = GetComponent<NavMeshAgent>();
         _mobPatrol = GetComponent<EnemyAI>();
+        _gatesHealth = FindObjectOfType<GatesHealth>();
     }
 }

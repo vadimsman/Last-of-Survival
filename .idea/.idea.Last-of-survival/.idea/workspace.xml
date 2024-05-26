@@ -21,10 +21,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DestroyMobGates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DeleteBlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAIGatesEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GatesHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyGatesEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptOrderController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Food.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PauseManager.cs" />
@@ -34,10 +32,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyGatesEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootingScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DayConroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GatesHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptOrderController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyGatesEvent.cs" />
       </list>
     </option>
   </component>
@@ -99,6 +101,7 @@
       <workItem from="1713917898897" duration="973000" />
       <workItem from="1713956624797" duration="11060000" />
       <workItem from="1716393400945" duration="5077000" />
+      <workItem from="1716738119031" duration="9799000" />
     </task>
     <servers />
   </component>
@@ -109,5 +112,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1245" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1716748044805">
+      <screen x="0" y="0" width="3440" height="1392" />
+    </state>
+    <state x="1245" y="329" width="672" height="678" key="search.everywhere.popup/0.0.3440.1392@0.0.3440.1392" timestamp="1716748044805" />
   </component>
 </project>
