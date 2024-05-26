@@ -15,22 +15,10 @@ public class EnemyGatesEvent : MonoBehaviour
     private void Start()
     {
         LinkGetComponents();
-        /*// Перебираем все объекты в сцене
-        foreach (var obj in FindObjectsOfType<GameObject>())
-        {
-            // Проверяем, содержит ли объект компонент ExampleScriptNeeded
-            if (obj.GetComponent<GatesHealth>() != null)
-            {
-                // Сохраняем ссылку на нужный скрипт
-                _gatesHealth = obj.GetComponent<GatesHealth>();
-                break; // Прерываем цикл, так как нашли нужный объект
-            }
-        }*/
     }
     private void Update()
     {
         GateDetectionAndDamage();
-        EnablingTheMainScript();
     }
 
     private void GateDetectionAndDamage()
@@ -40,15 +28,6 @@ public class EnemyGatesEvent : MonoBehaviour
         {
             _gatesHealth.DealDamage(_amount * Time.deltaTime);
         }
-    }
-
-    private void EnablingTheMainScript()
-    {
-        if (_gatesHealth.isGatesDestroy)
-        {
-            _mobPatrol.enabled = true;
-        }
-
     }
 
     private void LinkGetComponents()

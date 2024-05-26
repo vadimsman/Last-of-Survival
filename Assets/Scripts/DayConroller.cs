@@ -39,7 +39,7 @@ public class DayConroller : MonoBehaviour
         
         if (IsDay == true)
         {
-           _enemyHealth.DayDamage(DayDamage);
+           _enemyHealth.DayDamage(DayDamage * Time.deltaTime);
         }
     }
 

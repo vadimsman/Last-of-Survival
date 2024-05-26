@@ -5,12 +5,12 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float value;
-    public float Damage;
-    public UnityEngine.GameObject EnemyParent;
+    //public float Damage;
+    //public UnityEngine.GameObject EnemyParent;
     
-    public void DamageUpdate()
+    public void DamageUpdate(float damage)
     {
-        value -= Damage;
+        value -= damage;
         Death();
     }
 
@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (value <= 0)
         {
-            Destroy(EnemyParent);
+            Destroy(gameObject);
         }
     }
 }

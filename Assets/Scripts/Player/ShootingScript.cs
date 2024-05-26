@@ -18,7 +18,7 @@ public class ShootingScript : MonoBehaviour
                 {
                     Debug.Log("POPAL");
                     var enemyHealth = hit.collider.GetComponent<EnemyHealth>();
-                    enemyHealth.DamageUpdate();
+                    enemyHealth.DamageUpdate(damage);
                 }
                 else
                 {

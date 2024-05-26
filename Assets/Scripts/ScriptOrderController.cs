@@ -21,6 +21,24 @@ public class ScriptOrderController : MonoBehaviour
         {
             _mob.enabled = true;
         }
+
+        
+    }
+
+    private void Update()
+    {
+        if (_gatesHealth == null)
+        {
+            _gatesEvent.enabled = false;
+            _mob.enabled = true;
+        }
+        else
+        {
+            _gatesEvent.enabled = true;
+            _mob.enabled = false;
+        }
+        
+        
     }
 
     private void LinksComponents()
