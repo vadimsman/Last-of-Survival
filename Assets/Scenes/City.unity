@@ -6096,9 +6096,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9178103479909100755, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
         type: 3}
+      propertyPath: EnemyPrefab
+      value: 
+      objectReference: {fileID: 1114440810, guid: 0fb13dc6209f4f642aae5a42a5e3e504,
+        type: 3}
+    - target: {fileID: 9178103479909100755, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
+        type: 3}
+      propertyPath: PlayerController
+      value: 
+      objectReference: {fileID: 137900663}
+    - target: {fileID: 9178103479909100755, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
+        type: 3}
       propertyPath: EnemySpawnerObject
       value: 
       objectReference: {fileID: 1494649373}
+    - target: {fileID: 9178103479909100755, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
+        type: 3}
+      propertyPath: PatrolPoint.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178103479909100755, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[0]
+      value: 
+      objectReference: {fileID: 825178028}
+    - target: {fileID: 9178103479909100755, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[1]
+      value: 
+      objectReference: {fileID: 1973960207}
+    - target: {fileID: 9178103479909100755, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[2]
+      value: 
+      objectReference: {fileID: 1823590367}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd6a56244c8ad1b4f903dbdfd84deb6d, type: 3}
 --- !u!1001 &765594953

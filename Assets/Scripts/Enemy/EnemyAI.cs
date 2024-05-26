@@ -26,7 +26,6 @@ public class EnemyAI : MonoBehaviour
         LinksGetComponents();
         RandomPatrolPoints();
         _enemyGatesEvent.enabled = false;
-        Player = FindObjectOfType<PlayerController>();
     }
 
     private void Update()
@@ -99,5 +98,11 @@ public class EnemyAI : MonoBehaviour
                 _healthPlayer.DealDamage(_amountDamage * Time.deltaTime);
             }
         }
+    }
+
+    public void SetUpEnemy(PlayerController controller, List<Transform> points)
+    {
+        Player = controller;
+        Point = points;
     }
 }

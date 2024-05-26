@@ -5,10 +5,13 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public Transform EnemySpawnerObject;
-    public UnityEngine.GameObject EnemyPrefab;
+    public EnemyAI EnemyPrefab;
+    public PlayerController PlayerController;
+    public List<Transform> PatrolPoint;
 
     public void SpawnEnemy()
     {
-        Instantiate(EnemyPrefab, EnemySpawnerObject.position, EnemySpawnerObject.rotation);
+        var enemy = Instantiate(EnemyPrefab, EnemySpawnerObject.position, EnemySpawnerObject.rotation);
+        enemy.SetUpEnemy(PlayerController, PatrolPoint);
     }
 }
