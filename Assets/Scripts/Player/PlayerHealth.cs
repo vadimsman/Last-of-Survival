@@ -19,10 +19,5 @@ public class PlayerHealth : MonoBehaviour
     public void DealDamage(float amount)
     {
         value -= amount;
-        
-        if (value <= 0)
-        {
-            Destroy(gameObject);
-        }
     }
 }

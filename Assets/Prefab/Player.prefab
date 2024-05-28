@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 250734133686200439}
   - component: {fileID: 2002032270377375845}
   - component: {fileID: 137900662}
-  - component: {fileID: 235240116}
+  - component: {fileID: 1707957192555858470}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1106,7 +1106,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &235240116
+--- !u!114 &1707957192555858470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1115,11 +1115,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3161698791669643133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aab3808876c9444cb3fca375d680529, type: 3}
+  m_Script: {fileID: 11500000, guid: ab8b850b1a7d8e341b6931334a13aaea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 100
-  Slider: {fileID: 3873006065284313905}
+  WinUI: {fileID: 964026110445040891}
+  DefeatUI: {fileID: 3483060501011564140}
+  GamePlayUI: {fileID: 6274267884298982269}
+  PlayerHealth: {fileID: 2002032270377375845}
 --- !u!1 &3161698792720627484
 GameObject:
   m_ObjectHideFlags: 0

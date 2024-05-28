@@ -760,6 +760,7 @@ MonoBehaviour:
   DayXRotate: 0
   NightXRotate: 250
   LightGroup: {fileID: 906451911}
+  DayCount: 0
   EnemyCount: 0
   Wave: 0
   WaveUI: {fileID: 0}
@@ -906,8 +907,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 235240116, guid: 37647e0d435d0764a826fc17e55b69db, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37647e0d435d0764a826fc17e55b69db, type: 3}
 --- !u!1 &1920075701
 GameObject:
