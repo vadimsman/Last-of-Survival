@@ -18,14 +18,19 @@ public class EnemySpawner : MonoBehaviour
 
     public List<Transform> Points;
 
-    private void Start()
+    private void Awake()
     {
         _dayConroller = FindObjectOfType<DayConroller>();
+    }
+
+    private void Start()
+    {
         _enemies = new List<EnemyAI>();
     }
 
     private void Update()
     {
+        Debug.Log(_dayConroller.IsDay);
         if(_enemies.Count >= MaxCountEnemy) return;
         if(_dayConroller.IsDay) return;
         if(IsInvoking()) return;

@@ -38,8 +38,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyGatesEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DayConroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DayConroller.cs" />
       </list>
     </option>
   </component>
@@ -101,7 +101,8 @@
       <workItem from="1713917898897" duration="973000" />
       <workItem from="1713956624797" duration="11060000" />
       <workItem from="1716393400945" duration="5077000" />
-      <workItem from="1716738119031" duration="13512000" />
+      <workItem from="1716738119031" duration="13794000" />
+      <workItem from="1716907953850" duration="657000" />
     </task>
     <servers />
   </component>
