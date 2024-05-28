@@ -12,8 +12,6 @@ public class EnemySpawner : MonoBehaviour
     public float SpawnDelay;
     
     private DayConroller _dayConroller;
-
-    private float _lastTimeSpawn;
     
 
     public List<Transform> Points;
@@ -26,11 +24,11 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         _enemies = new List<EnemyAI>();
+        Debug.Log(SpawnerPoints.position);
     }
 
     private void Update()
     {
-        Debug.Log(_dayConroller.IsDay);
         if(_enemies.Count >= MaxCountEnemy) return;
         if(_dayConroller.IsDay) return;
         if(IsInvoking()) return;
@@ -43,5 +41,7 @@ public class EnemySpawner : MonoBehaviour
         enemy.transform.position = SpawnerPoints.position;
         enemy.Point = Points;
         _enemies.Add(enemy);
+        Debug.Log(SpawnerPoints.position);
+        Debug.Log(enemy.transform.position);
     }
 }

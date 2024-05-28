@@ -37,6 +37,8 @@ public class EnemyAI : MonoBehaviour
         PatrolToPlayer();
         
         EnemyAttack();
+
+        Debug.Log(transform.position);
     }
 
     private void LinksGetComponents()

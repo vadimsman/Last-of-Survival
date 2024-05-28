@@ -16,6 +16,8 @@ public class DayConroller : MonoBehaviour
 
     private bool _isDay = true;
 
+    public int DayCount;
+
     public int EnemyCount;
     public int Wave = 0;
     public UnityEngine.GameObject WaveUI;
@@ -37,11 +39,10 @@ public class DayConroller : MonoBehaviour
         _newAngleX = transform.eulerAngles.x;
         _isDay = _newAngleX > DayXRotate && _newAngleX < NightXRotate;
         LightOnOrOf();
-        
-        /*if (IsDay == true)
+        if (!_isDay)
         {
-           _enemyHealth.DayDamage(DayDamage * Time.deltaTime);
-        }*/
+            DayCount++;
+        }
     }
 
     private void LightOnOrOf()

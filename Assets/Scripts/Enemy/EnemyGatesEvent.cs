@@ -19,6 +19,7 @@ public class EnemyGatesEvent : MonoBehaviour
     private void Update()
     {
         GateDetectionAndDamage();
+        Debug.Log(transform.position);
     }
 
     private void GateDetectionAndDamage()
