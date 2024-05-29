@@ -37,8 +37,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void CreateEnemy()
     {
-        var enemy = Instantiate(EnemyPrefab);
-        enemy.transform.position = SpawnerPoints.position;
+        var enemy = Instantiate(EnemyPrefab, SpawnerPoints.position, Quaternion.identity);
         enemy.Point = Points;
         _enemies.Add(enemy);
         Debug.Log(SpawnerPoints.position);

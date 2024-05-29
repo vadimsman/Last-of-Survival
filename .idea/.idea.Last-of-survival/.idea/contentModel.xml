@@ -38,6 +38,7 @@
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerHealth.cs" t="Include" />
             <e p="ShootingScript.cs" t="Include" />
+            <e p="WinAndLose.cs" t="Include" />
           </e>
           <e p="ScriptOrderController.cs" t="Include" />
         </e>
