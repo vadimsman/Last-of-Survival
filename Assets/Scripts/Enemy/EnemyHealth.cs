@@ -1,25 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
     public float value;
-    //public float Damage;
-    //public UnityEngine.GameObject EnemyParent;
-    
+
+    public bool IsAlive()
+    {
+        return value > 0;
+    }
+
     public void DamageUpdate(float damage)
     {
         value -= damage;
-        Death();
+        DeadEnemy();
     }
 
-    public void DayDamage(float Damage)
-    {
-        value -= Damage;
-    }
-
-    public void Death()
+    private void DeadEnemy()
     {
         if (value <= 0)
         {

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyGatesEvent : MonoBehaviour
@@ -19,7 +18,6 @@ public class EnemyGatesEvent : MonoBehaviour
     private void Update()
     {
         GateDetectionAndDamage();
-        Debug.Log(transform.position);
     }
 
     private void GateDetectionAndDamage()

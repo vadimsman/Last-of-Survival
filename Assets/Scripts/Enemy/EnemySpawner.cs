@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,11 +8,10 @@ public class EnemySpawner : MonoBehaviour
     public EnemyAI EnemyPrefab;
 
     private List<EnemyAI> _enemies;
-    public int MaxCountEnemy;
+    public int MaxCountEnemy = 10;
     public float SpawnDelay;
     
     private DayConroller _dayConroller;
-    
 
     public List<Transform> Points;
 
@@ -24,11 +23,18 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         _enemies = new List<EnemyAI>();
-        Debug.Log(SpawnerPoints.position);
     }
 
     private void Update()
     {
+        for (int i = 0; i < _enemies.Count; i++)
+        {
+            if(_enemies[i].IsAlive()) continue;
+            MaxCountEnemy--;
+            _enemies.RemoveAt(i);
+            i--;
+        }
+        
         if(_enemies.Count >= MaxCountEnemy) return;
         if(_dayConroller.IsDay) return;
         if(IsInvoking()) return;
@@ -40,7 +46,5 @@ public class EnemySpawner : MonoBehaviour
         var enemy = Instantiate(EnemyPrefab, SpawnerPoints.position, Quaternion.identity);
         enemy.Point = Points;
         _enemies.Add(enemy);
-        Debug.Log(SpawnerPoints.position);
-        Debug.Log(enemy.transform.position);
     }
 }

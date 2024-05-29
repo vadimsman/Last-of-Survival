@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DayConroller : MonoBehaviour
 {
@@ -17,11 +15,6 @@ public class DayConroller : MonoBehaviour
     private bool _isDay = true;
 
     public int DayCount;
-
-    public int EnemyCount;
-    public int Wave = 0;
-    public UnityEngine.GameObject WaveUI;
-    public float DayDamage;
 
     private EnemyHealth _enemyHealth;
 

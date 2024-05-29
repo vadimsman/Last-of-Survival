@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptOrderController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CA42919D-F2B7-4E53-B110-02749C8755AF/50/8d9ce58f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GatesHealth.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -31,15 +32,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemScriptableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptOrderController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GatesHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyGatesEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DayConroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DayConroller.cs" />
       </list>
     </option>
   </component>
@@ -103,6 +104,7 @@
       <workItem from="1716393400945" duration="5077000" />
       <workItem from="1716738119031" duration="13794000" />
       <workItem from="1716907953850" duration="657000" />
+      <workItem from="1717007462167" duration="8637000" />
     </task>
     <servers />
   </component>

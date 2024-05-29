@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -19,7 +17,19 @@ public class EnemyAI : MonoBehaviour
     public float AngleView;
     public float DistanceToPlayer;
 
+    private EnemyHealth _enemiesHealths;
+
     [SerializeField] private float _amountDamage;
+
+    public bool IsAlive()
+    {
+        return _enemiesHealths.IsAlive();
+    }
+
+    private void Awake()
+    {
+        LinksGetComponentsForAwake();
+    }
 
     private void Start()
     {
@@ -37,10 +47,12 @@ public class EnemyAI : MonoBehaviour
         PatrolToPlayer();
         
         EnemyAttack();
-
-        Debug.Log(transform.position);
     }
 
+    private void LinksGetComponentsForAwake()
+    {
+        _enemiesHealths = GetComponent<EnemyHealth>();
+    }
     private void LinksGetComponents()
     {
         _mob = GetComponent<NavMeshAgent>();
