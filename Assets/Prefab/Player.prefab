@@ -1390,6 +1390,7 @@ GameObject:
   - component: {fileID: 2002032270377375845}
   - component: {fileID: 137900662}
   - component: {fileID: 1707957192555858470}
+  - component: {fileID: 8440697720676279167}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1486,7 +1487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   muzzlePosition: {fileID: 0}
   firePoint: {fileID: 3721823471104238678}
-  damage: 100
+  damage: 10
   AudioController: {fileID: 531168597508864034}
   KD: 0
   KDExpenditure: 0.05
@@ -1495,6 +1496,7 @@ MonoBehaviour:
   ReloadSpeed: 0.004
   AmmoInInventoryText: {fileID: 6541695378400746035}
   CurentAmmo: {fileID: 4739620427039862891}
+  WeaponReload: {fileID: 2835427314461775942}
 --- !u!114 &2002032270377375845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1545,6 +1547,20 @@ MonoBehaviour:
   GamePlayUI: {fileID: 6274267884298982269}
   PlayerHealth: {fileID: 2002032270377375845}
   IsWin: 0
+--- !u!136 &8440697720676279167
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3161698791669643133}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.26
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: -0.15}
 --- !u!1 &3161698792720627484
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,6 +4376,12 @@ PrefabInstance:
 --- !u!4 &6140598025778034813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1147199029307142076, guid: 41def9a97d8b4eb479bb35397f03dbe2,
+    type: 3}
+  m_PrefabInstance: {fileID: 6547215910790272961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2835427314461775942 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9044657623279832967, guid: 41def9a97d8b4eb479bb35397f03dbe2,
     type: 3}
   m_PrefabInstance: {fileID: 6547215910790272961}
   m_PrefabAsset: {fileID: 0}

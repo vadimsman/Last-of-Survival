@@ -12,9 +12,18 @@ public class PlayerHealth : MonoBehaviour
     public void Update()
     {
         Slider.value = value;
+        if (value > 100)
+        {
+            value = 100;
+        }
     }
     public void DealDamage(float amount)
     {
         value -= amount;
+    }
+
+    public void AddHealth(int addValue)
+    {
+        value += addValue;
     }
 }

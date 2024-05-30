@@ -52,7 +52,7 @@ public class EnemySpawner : MonoBehaviour
         if(_enemies.Count >= MaxCountEnemy) return;
         if(_dayConroller.IsDay) return;
         if(IsInvoking()) return;
-        Invoke("CreateEnemy", SpawnDelay);
+        Invoke("CreateEnemy", SpawnDelay * Time.deltaTime);
     }
 
     private void CreateEnemy()
