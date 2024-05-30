@@ -1221,6 +1221,7 @@ MonoBehaviour:
   muzzlePosition: {fileID: 0}
   firePoint: {fileID: 3721823471104238678}
   damage: 10
+  AudioController: {fileID: 531168597508864034}
 --- !u!114 &2002032270377375845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1804,6 +1805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4866941488604823248}
   - component: {fileID: 4951788420916004750}
+  - component: {fileID: 531168597508864034}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -1832,14 +1834,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4531204327007525478}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 75f0f1df413696741896743024ea9515, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: 1c151652a6e46c142a0ad466aa4010a1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.351
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1921,6 +1923,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &531168597508864034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4531204327007525478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599c5441ca3c52d47a5b2bd208fd3051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootSound: {fileID: 4951788420916004750}
 --- !u!1 &4982318723151677790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3835,15 +3850,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41def9a97d8b4eb479bb35397f03dbe2, type: 3}
---- !u!4 &543450653607294955 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6725804246799212586, guid: 41def9a97d8b4eb479bb35397f03dbe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 6547215910790272961}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6140598025778034813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1147199029307142076, guid: 41def9a97d8b4eb479bb35397f03dbe2,
+    type: 3}
+  m_PrefabInstance: {fileID: 6547215910790272961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &543450653607294955 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6725804246799212586, guid: 41def9a97d8b4eb479bb35397f03dbe2,
     type: 3}
   m_PrefabInstance: {fileID: 6547215910790272961}
   m_PrefabAsset: {fileID: 0}
