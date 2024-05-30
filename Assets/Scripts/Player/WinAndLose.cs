@@ -10,6 +10,15 @@ public class WinAndLose : MonoBehaviour
     public GameObject GamePlayUI;
     public PlayerHealth PlayerHealth;
     public bool IsWin;
+    private EnemySpawner _enemySpawner;
+    private DayConroller _dayController;
+
+    public void Start()
+    {
+        _dayController = FindObjectOfType<DayConroller>();
+        _enemySpawner = FindObjectOfType<EnemySpawner>();
+    }
+
     public void Update()
     {
         if(PlayerHealth.Value <= 0)
@@ -23,7 +32,7 @@ public class WinAndLose : MonoBehaviour
             }
         }
 
-        if (IsWin)
+        if (_dayController.DayCount == 3 && _enemySpawner._enemies.Count == 0)
         {
             WinUI.SetActive(true);
             GamePlayUI.SetActive(false);

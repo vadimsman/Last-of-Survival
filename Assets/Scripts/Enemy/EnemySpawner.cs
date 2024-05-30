@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     public Transform SpawnerPoints;
     public EnemyAI EnemyPrefab;
 
-    private List<EnemyAI> _enemies;
+    public List<EnemyAI> _enemies;
     public int MaxCountEnemy = 10;
     public float SpawnDelay;
     
@@ -27,6 +27,20 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
+        if (_dayConroller.IsDay == true)
+        {
+            MaxCountEnemy = 3;
+        }
+        if (_enemies.Count == 0)
+        {
+            _dayConroller.enabled = true;
+        }
+        if (_enemies.Count == MaxCountEnemy)
+        {
+            _dayConroller.DayCount += 1;
+            _dayConroller.enabled = false;
+            MaxCountEnemy = 0;
+        }
         for (int i = 0; i < _enemies.Count; i++)
         {
             if(_enemies[i].IsAlive()) continue;

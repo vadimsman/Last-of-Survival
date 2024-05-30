@@ -16,14 +16,12 @@ public class DayConroller : MonoBehaviour
 
     public int DayCount;
 
-    private EnemyHealth _enemyHealth;
+    public int LastDay;
 
     public bool IsDay => _isDay;
     public void Start()
     {
         _newAngleX = transform.eulerAngles.x;
-        _enemyHealth = FindObjectOfType<EnemyHealth>();
-
     }
 
     public void Update()
@@ -32,10 +30,7 @@ public class DayConroller : MonoBehaviour
         _newAngleX = transform.eulerAngles.x;
         _isDay = _newAngleX > DayXRotate && _newAngleX < NightXRotate;
         LightOnOrOf();
-        if (!_isDay)
-        {
-            DayCount++;
-        }
+        LastDay = DayCount - 1;
     }
 
     private void LightOnOrOf()

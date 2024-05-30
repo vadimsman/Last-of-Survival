@@ -886,6 +886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnerPoints: {fileID: 40127910}
   EnemyPrefab: {fileID: 1114440810, guid: 0fb13dc6209f4f642aae5a42a5e3e504, type: 3}
+  _enemies: []
   MaxCountEnemy: 10
   SpawnDelay: 1
   Points:
@@ -6083,36 +6084,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 454633897995266144, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 454633897995266144, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 454633897995266144, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 454633897995266144, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 454633897995266144, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 454633897995266144, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8111297553550303516, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
         type: 3}
       propertyPath: m_RootOrder
@@ -6170,16 +6141,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8111297553550303517, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
         type: 3}
-      propertyPath: Speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8111297553550303517, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
-        type: 3}
-      propertyPath: EnemyCount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8111297553550303517, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
-        type: 3}
       propertyPath: LightGroup
       value: 
       objectReference: {fileID: 1241260331}
@@ -6187,11 +6148,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DayController
-      objectReference: {fileID: 0}
-    - target: {fileID: 8111297553550303518, guid: fd6a56244c8ad1b4f903dbdfd84deb6d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd6a56244c8ad1b4f903dbdfd84deb6d, type: 3}
@@ -19884,7 +19840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnerPoints: {fileID: 2088014283}
   EnemyPrefab: {fileID: 1114440810, guid: 0fb13dc6209f4f642aae5a42a5e3e504, type: 3}
-  MaxCountEnemy: 10
+  _enemies: []
+  MaxCountEnemy: 3
   SpawnDelay: 1
   Points:
   - {fileID: 586926798}
