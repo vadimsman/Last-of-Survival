@@ -72,7 +72,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (_dayConroller.IsDay == true)
         {
-            MaxCountEnemy = Convert.ToInt32(CountEnemies[_dayConroller.DayCount - 1]);
+            MaxCountEnemy = CountEnemies[_dayConroller.DayCount - 1].EnemyCount;
         }
     }
 }

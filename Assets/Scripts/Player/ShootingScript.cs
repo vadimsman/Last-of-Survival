@@ -82,5 +82,9 @@ public class ShootingScript : MonoBehaviour
             }
         }
     }
+    public void AddAmmo(int value)
+    {
+        AmmoInInventory += value;
+    }
 }
 
