@@ -395,7 +395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 55.22101, y: 48.00003}
+  m_AnchoredPosition: {x: 55.220947, y: 48}
   m_SizeDelta: {x: 43.042206, y: 40.119324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &432354104722867605
@@ -1486,7 +1486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   muzzlePosition: {fileID: 0}
   firePoint: {fileID: 3721823471104238678}
-  damage: 10
+  damage: 100
   AudioController: {fileID: 531168597508864034}
   KD: 0
   KDExpenditure: 0.05
@@ -2113,7 +2113,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6703b707721fb574596e4754bb8a80dd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.351
+  m_Volume: 0.023
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2223,7 +2223,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ca29388447b1486409e33b4450166c9b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.027
   m_Pitch: 1
   Loop: 0
   Mute: 0

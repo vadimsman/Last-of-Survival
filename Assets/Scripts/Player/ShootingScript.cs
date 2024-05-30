@@ -18,6 +18,7 @@ public class ShootingScript : MonoBehaviour
     public float ReloadSpeed;
     public TextMeshProUGUI AmmoInInventoryText;
     public TextMeshProUGUI CurentAmmo;
+    public Animator WeaponReload;
     void Update()
     {
         CurentAmmo.text = AmmoInMagazine.ToString();
@@ -52,6 +53,7 @@ public class ShootingScript : MonoBehaviour
         {
             if (AmmoInInventory >= 30 && _reloadKD == 0)
             {
+                
                 AudioController.ReloadSoundPlay();
                 _needAmmo = _maxAmmo - AmmoInMagazine;
                 AmmoInInventory -= _needAmmo;

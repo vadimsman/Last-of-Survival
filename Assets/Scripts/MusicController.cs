@@ -11,6 +11,7 @@ public class MusicController : MonoBehaviour
     public AudioSource audioSource3;
     public AudioSource audioSource4;
     public AudioSource audioSource5;
+    public DayConroller nazovi;
     void Start()
     {
 
@@ -20,32 +21,32 @@ public class MusicController : MonoBehaviour
     {
         if(DayController.GetComponent<Transform>().rotation.x > 200)
         {
-            counter += 1;
 
-            if(counter == 1)
+
+            if(nazovi.DayCount == 1)
             {
                 audioSource.Play();
             }
 
-            if(counter == 2)
+            if(nazovi.DayCount == 2)
             {
                 audioSource.Stop();
                 audioSource2.Play();
             }
 
-            if(counter == 3)
+            if(nazovi.DayCount == 3)
             {
                 audioSource2.Stop();
                 audioSource3.Play(); 
             }
 
-            if(counter == 4)
+            if(nazovi.DayCount == 4)
             {
                 audioSource3.Stop();
                 audioSource4.Play(); 
             }
 
-            if(counter == 5)
+            if(nazovi.DayCount == 5)
             {
                 audioSource4.Stop();
                 audioSource5.Play(); 
