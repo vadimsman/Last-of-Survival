@@ -23,6 +23,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AudioController.cs" t="Include" />
           <e p="ButtonController.cs" t="Include" />
           <e p="DayConroller.cs" t="Include" />
           <e p="Enemy" t="Include">
@@ -31,7 +32,9 @@
             <e p="EnemyHealth.cs" t="Include" />
             <e p="EnemySpawner.cs" t="Include" />
           </e>
+          <e p="FirstAidKit.cs" t="Include" />
           <e p="GatesHealth.cs" t="Include" />
+          <e p="MusicController.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="BuildingEnter.cs" t="Include" />
             <e p="CameraRotation.cs" t="Include" />

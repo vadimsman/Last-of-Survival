@@ -8,14 +8,14 @@ public class ShootingScript : MonoBehaviour
     public Transform firePoint; // Точка, откуда производится выстрел
     public float damage;
     public AudioController AudioController;
-    public float KD;
-    public float KDExpenditure;
+    private float KD;
+    private float KDExpenditure = 7f;
     public int AmmoInMagazine = 30;
     private int _maxAmmo = 30;
     public int AmmoInInventory;
     private int _needAmmo;
     private float _reloadKD = 0;
-    public float ReloadSpeed;
+    private float ReloadSpeed = 0.4f;
     public TextMeshProUGUI AmmoInInventoryText;
     public TextMeshProUGUI CurentAmmo;
     public Animator WeaponReload;
@@ -23,7 +23,7 @@ public class ShootingScript : MonoBehaviour
     {
         CurentAmmo.text = AmmoInMagazine.ToString();
         AmmoInInventoryText.text = AmmoInInventory.ToString();
-        KD -= KDExpenditure;
+        KD -= KDExpenditure * Time.deltaTime;
         if (KD < 0)
         {
             KD = 0;
@@ -44,7 +44,7 @@ public class ShootingScript : MonoBehaviour
                 }
             }
         }
-        _reloadKD -= ReloadSpeed;
+        _reloadKD -= ReloadSpeed * Time.deltaTime;
         if (_reloadKD < 0)
         {
             _reloadKD = 0;
@@ -63,8 +63,21 @@ public class ShootingScript : MonoBehaviour
             if (AmmoInInventory < 30 && AmmoInInventory > 0 && _reloadKD == 0)
             {
                 AudioController.ReloadSoundPlay();
-                AmmoInMagazine = AmmoInInventory;
-                AmmoInInventory = 0;
+                
+                _needAmmo = _maxAmmo - AmmoInMagazine;
+                if (_needAmmo >= AmmoInInventory)
+                {
+                    AmmoInMagazine += AmmoInInventory;
+                    AmmoInInventory = 0;
+                }
+
+                if (_needAmmo < AmmoInInventory)
+                {
+                    AmmoInInventory -= _needAmmo;
+                    AmmoInMagazine = _maxAmmo;
+                }
+                
+                
                 _reloadKD = 1;
             }
         }
