@@ -1437,8 +1437,8 @@ MonoBehaviour:
   PauseMenuUI: {fileID: 2540969092951584739}
   IsSettingsOpen: 0
   Stamina: 100
-  StaminaExpenditure: 0.3
-  StaminaRefresh: 0.2
+  StaminaExpenditure: 20
+  StaminaRefresh: 18
   StaminaBar: {fileID: 4613018671813947008}
 --- !u!143 &3161698791669643134
 CharacterController:
