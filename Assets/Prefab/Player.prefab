@@ -1222,6 +1222,8 @@ MonoBehaviour:
   firePoint: {fileID: 3721823471104238678}
   damage: 10
   AudioController: {fileID: 531168597508864034}
+  KD: 0
+  KDExpenditure: 0.05
 --- !u!114 &2002032270377375845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,7 +1839,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1c151652a6e46c142a0ad466aa4010a1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6703b707721fb574596e4754bb8a80dd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.351
   m_Pitch: 1
