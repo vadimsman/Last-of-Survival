@@ -20665,8 +20665,8 @@ MonoBehaviour:
   SpawnerPoints: {fileID: 2088014283}
   EnemyPrefab: {fileID: 1114440810, guid: 0fb13dc6209f4f642aae5a42a5e3e504, type: 3}
   _enemies: []
-  MaxCountEnemy: 100000
-  SpawnDelay: 0.0001
+  MaxCountEnemy: 3
+  SpawnDelay: 1
   Points:
   - {fileID: 586926798}
   - {fileID: 61004371}
