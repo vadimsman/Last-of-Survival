@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,6 +25,14 @@ public class PlayerController : MonoBehaviour
 
     public bool IsSettingsOpen;
 
+    public float Stamina;
+
+    public float StaminaExpenditure;
+
+    public float StaminaRefresh;
+
+    public Slider StaminaBar;
+
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
@@ -36,6 +45,7 @@ public class PlayerController : MonoBehaviour
         Movement();
         JumpMove();
         PauseMenuUpdate();
+        StaminaBarUpdate();
     }
 
     void FixedUpdate()
@@ -88,9 +98,20 @@ public class PlayerController : MonoBehaviour
             _moveVector -= transform.right;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && Stamina > 0)
         {
             Speed = 8;
+            Stamina -= StaminaExpenditure;
+        }
+
+        if (!Input.GetKey(KeyCode.LeftShift))
+        {
+            Stamina += StaminaRefresh;
+        }
+
+        if (Stamina > 100)
+        {
+            Stamina = 100;
         }
 
         //_moveVector = Vector3.ClampMagnitude(_moveVector, Speed);
@@ -106,5 +127,10 @@ public class PlayerController : MonoBehaviour
             Cursor.visible = true;
             Time.timeScale = 0;
         }
+    }
+
+    public void StaminaBarUpdate()
+    {
+        StaminaBar.value = Stamina;
     }
 }
