@@ -16,8 +16,6 @@ public class DayConroller : MonoBehaviour
 
     public int DayCount;
 
-    public int LastDay;
-
     public bool IsDay => _isDay;
     public void Start()
     {
@@ -30,7 +28,6 @@ public class DayConroller : MonoBehaviour
         _newAngleX = transform.eulerAngles.x;
         _isDay = _newAngleX > DayXRotate && _newAngleX < NightXRotate;
         LightOnOrOf();
-        LastDay = DayCount - 1;
     }
 
     private void LightOnOrOf()

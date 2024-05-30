@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,12 +9,16 @@ public class EnemySpawner : MonoBehaviour
     public EnemyAI EnemyPrefab;
 
     public List<EnemyAI> _enemies;
-    public int MaxCountEnemy = 10;
+    private int MaxCountEnemy;
     public float SpawnDelay;
     
     private DayConroller _dayConroller;
 
     public List<Transform> Points;
+
+    public List<DayCountEnemy> CountEnemies;
+
+    private int _currentEnemy;
 
     private void Awake()
     {
@@ -27,10 +32,11 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        if (_dayConroller.IsDay == true)
+        if (_dayConroller.DayCount > 0)
         {
-            MaxCountEnemy = 3;
+            EnemyCountUpdate();
         }
+        
         if (_enemies.Count == 0)
         {
             _dayConroller.enabled = true;
@@ -52,7 +58,7 @@ public class EnemySpawner : MonoBehaviour
         if(_enemies.Count >= MaxCountEnemy) return;
         if(_dayConroller.IsDay) return;
         if(IsInvoking()) return;
-        Invoke("CreateEnemy", SpawnDelay * Time.deltaTime);
+        Invoke("CreateEnemy", SpawnDelay);
     }
 
     private void CreateEnemy()
@@ -60,5 +66,13 @@ public class EnemySpawner : MonoBehaviour
         var enemy = Instantiate(EnemyPrefab, SpawnerPoints.position, Quaternion.identity);
         enemy.Point = Points;
         _enemies.Add(enemy);
+    }
+
+    private void EnemyCountUpdate()
+    {
+        if (_dayConroller.IsDay == true)
+        {
+            MaxCountEnemy = Convert.ToInt32(CountEnemies[_dayConroller.DayCount - 1]);
+        }
     }
 }
